@@ -1,5 +1,3 @@
-SSSSSSSSSSSSSSSS
-
 class Perro():
     """ Clase Perro """
 class Dog():
