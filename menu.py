@@ -22,6 +22,12 @@ def print_precios():
     for p in m.precios.values():
         print(p)
 
+def get_precio(zonas):
+    if zonas >= 1 and zonas <= 6:
+        return m.precios[zonas - 1]
+    else:
+        return -1
+
 mizona = 1
 mipoblacion = "Irun"
 
@@ -54,7 +60,7 @@ destino = input()
 #destino = "Urnieta"
 
 print("El precio de (" + opc + ") de " + mipoblacion + " a " + destino + " es:")
-
+print(get_precio)
 
 
 
