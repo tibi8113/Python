@@ -6,10 +6,11 @@ precios = {
 }
 
 zonas = {
-    "zona1" : ["Urnieta","Hernani Centro","Hernani","Martutene","Loiola","Donosti","Gros","Ategorrieta","Intxaurrondo","Herrera","Pasaia","Lezo-Renteria"],
-    "zona2" : ["Billabona Zizurki","Andoain Centro","Andoain","Ventas de Irun","Irun"],
-    "zona3" : ["Alegia","Tolosa","Tolosa Centro","Anoeta"],
-    "zona4" : ["Beasain","Ordizia","Itsasondo","Legorreta","Ikaztegieta"],
-    "zona5" : ["Legazpi","Zumarraga","Ormaiztegi"],
-    "zona6" : ["Brinkola"],
+    "1" : ["Urnieta","Hernani Centro","Hernani","Martutene","Loiola","Donosti","Gros","Ategorrieta","Intxaurrondo","Herrera","Pasaia","Lezo-Renteria"],
+    "2" : ["Billabona Zizurki","Andoain Centro","Andoain","Ventas de Irun","Irun"],
+    "3" : ["Alegia","Tolosa","Tolosa Centro","Anoeta"],
+    "4" : ["Beasain","Ordizia","Itsasondo","Legorreta","Ikaztegieta"],
+    "5" : ["Legazpi","Zumarraga","Ormaiztegi"],
+    "6" : ["Brinkola"],
         }
+        

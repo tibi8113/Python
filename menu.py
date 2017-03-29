@@ -17,8 +17,6 @@ def print_zonas():
         print(p)
 
 
-
-
 def print_precios():
     for p in m.precios.values():
         print(p)
@@ -36,10 +34,7 @@ mipoblacion = "Irun"
 
 """MAIN"""
 
-#opc = input("1.Ida\n2.Ida y vuelta\n3.Mensual\n")
-opc = "1"
-
-
+opc = input("1.Ida\n2.Ida y vuelta\n3.Mensual\n")
 
 if opc == "1":
     opc = "ida"
@@ -58,10 +53,11 @@ print_zonas()
 
 
 destino = input()
-#destino = "Urnieta"
 
 print("El precio de (" + opc + ") de " + mipoblacion + " a " + destino + " es:")
 print(get_precio)
+
+precios{"ida"}
 
 
 
