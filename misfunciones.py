@@ -11,17 +11,16 @@ precios = {
           }
 
 zonas = {
-    "1" : ["Urnieta","Hernani Centro","Hernani","Martutene","Loiola","Donosti","Gros","Ategorrieta","Intxaurrondo","Herrera","Pasaia","Lezo-Renteria"],
-    "2" : ["Billabona Zizurki","Andoain Centro","Andoain","Ventas de Irun","Irun"],
-    "3" : ["Alegia","Tolosa","Tolosa Centro","Anoeta"],
-    "4" : ["Beasain","Ordizia","Itsasondo","Legorreta","Ikaztegieta"],
-    "5" : ["Legazpi","Zumarraga","Ormaiztegi"],
-    "6" : ["Brinkola"],
+    1 : ["Urnieta","Hernani Centro","Hernani","Martutene","Loiola","Donosti","Gros","Ategorrieta","Intxaurrondo","Herrera","Pasaia","Lezo-Renteria"],
+    2 : ["Billabona Zizurki","Andoain Centro","Andoain","Ventas de Irun","Irun"],
+    3 : ["Alegia","Tolosa","Tolosa Centro","Anoeta"],
+    4 : ["Beasain","Ordizia","Itsasondo","Legorreta","Ikaztegieta"],
+    5 : ["Legazpi","Zumarraga","Ormaiztegi"],
+    6 : ["Brinkola"],
         }
 
 def buscar_zona():
     for z, p in zonas.items():
-        print(z)
         for d in p:
             if d == destino:
                 zona = z
@@ -30,16 +29,19 @@ def buscar_zona():
 
 
 def print_zonas():
+    stations = []
     for z, p in zonas.items():
-        print (p)
+        for s in p:
+            stations.append(s)
 
+    return stations
 
 def print_precios():
     for p in precios.values():
         return p
 
 def get_precio():
-    zona_dest = buscar_zona(destino)
+    zona_dest = buscar_zona()
     zona = abs(mizona - zona_dest)
     return precios[opc][zona]
 

@@ -21,11 +21,11 @@ elif opc =="4":
     
 print (m.print_zonas())
 
-m.destino = input()
+m.destino = input("Destino: ")
 
 print("El precio de (" + opc + ") de " + m.mipoblacion + " a " + m.destino + " es:")
 
-print(m.get_precio)
+m.get_precio()
 
 
 
