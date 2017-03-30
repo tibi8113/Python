@@ -19,15 +19,15 @@ elif opc == "3":
 elif opc =="4":
     print("MENSUAL ILIMITADO")
     
-print_zonas()
+print (m.print_zonas())
+
+m.destino = input()
+
+print("El precio de (" + opc + ") de " + m.mipoblacion + " a " + m.destino + " es:")
+
+print(m.get_precio)
 
 
-destino = input()
-
-print("El precio de (" + opc + ") de " + mipoblacion + " a " + destino + " es:")
-print(get_precio)
-
-precios{"ida"}
 
 
 

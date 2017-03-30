@@ -1,3 +1,8 @@
+mizona = 1
+mipoblacion = "Irun"
+destino = ""
+opc = ""
+
 precios = {
     "ida" : [1.70, 1.90, 2.60, 3.35, 3.80, 5.00],
     "ida y vuelta" : [2.60, 2.75, 4.10, 5.50, 6.40, 8.00],
@@ -21,23 +26,21 @@ def buscar_zona():
             if d == destino:
                 zona = z
                 break
-    return zona
+        return zona
 
 
 def print_zonas():
     for z, p in zonas.items():
-        print(p)
+        print (p)
 
 
 def print_precios():
     for p in precios.values():
-        print(p)
+        return p
 
-def get_precio(zonas):
-    if zonas >= 1 and zonas <= 6:
-        return precios[zonas - 1]
-    else:
-        return -1
+def get_precio():
+    zona_dest = buscar_zona(destino)
+    zona = abs(mizona - zona_dest)
+    return precios[opc][zona]
 
-mizona = 1
-mipoblacion = "Irun"
+
