@@ -6,6 +6,11 @@
         <meta charset="utf-8"/>
         <style>
 
+            #botones{
+                width: 350px;
+                height: 60px;
+                align-content: center;
+            }
             .boton{
                 width: 100px;
                 height: 50px;
@@ -14,6 +19,9 @@
                 border-radius: 7px 7px 7px 7px;
                 border-color: black;
                 color: #0D88FF;
+                box-shadow: 5px 5px 5px #999;
+                margin-left: 10px;
+                
             }
 
         </style>
@@ -25,9 +33,15 @@
 
     <body>
 
-        <input type="button" id="ida" value="IDA" class="boton" />
-        <input type="button" id="idavuelta" value="IDA/VUELTA" class="boton" />
-        <input type="button" id="mensual" value="MENSUAL" class="boton" />
+        <div id="botones">
+
+            <a href="/ida"> <input type="button" id="ida" value="IDA" class="boton" /> </a>
+            <a href="/idavuelta"> <input type="button" id="idavuelta" value="IDA/VUELTA" class="boton" /> </a>
+            <a href="/mensual"> <input type="button" id="mensual" value="MENSUAL" class="boton" /> </a>
+
+        </div>
+        
+        
 
     </body>
 </html>
