@@ -1,45 +1,21 @@
 from flask import Flask
 from flask import render_template
-import a
-# c9
-import os
+import misfunciones as rf
+
 
 app = Flask(__name__)
 app.debug = True
 
 @app.route("/")
-def hello():
-    name = "Koxme"
-    s2 = "Peru"
+def principal():
+    return render_template('Renfe.html')
 
-    return render_template('index.html', name=name, name2=s2)
+@app.route("/opc/<select>")
+def opc(select):
+    #return render_template('Renfe.html')
+    #return "Has seleccionado la opción: " + select
+    return str(rf.print_zonas())
 
-@app.route("/suma/<x>/<y>")
-def sumaxy(x, y):
-    return str(a.suma(x,y))
-
-
-@app.route("/precio/<est1>/<est2>")
-def precio(est1, est2):
-    # calcular
-    precio = str(2.5)
-    return render_template('precio.html', precio=precio, est1=est1, est2=est2)
-
-
-
-@app.route("/alumnos")
-def lista_alumnos():
-    lista_alumnos = ['Koxme', 'Peru', 'Mari']
-    return render_template('alumnos.html', alumnos=lista_alumnos)
-
-
-@app.route("/nombre/<s>")
-def get_name(s):
-    return render_template('index.html', name=s)
-
-'''
 if __name__ == "__main__":
     app.run()
-'''
-if __name__ == "__main__":
-    app.run(host=os.getenv('IP', '0.0.0.0'),port=int(os.getenv('PORT', 5000)))
+
