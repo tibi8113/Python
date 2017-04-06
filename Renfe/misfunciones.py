@@ -28,20 +28,19 @@ def buscar_zona():
         return zona
 
 
-"""def print_zonas():
+def print_zonas():
     stations = []
     for z, p in zonas.items():
         for s in p:
             stations.append(s)
+    return stations
 
-    return stations"""
-
-def print_zonas():
+"""def print_zonas():
     stations = ''
     for z, p in zonas.items():
         for s in p:
-            stations += '<a href="#">' + s + '</a><br>' 
-    return stations
+            stations += '<a href="#">' + s + '</a><br>'
+    return stations"""
 
 
 def print_precios():
