@@ -11,9 +11,9 @@ precios = {
           }
 
 zonas = {
-    1 : ["Urnieta","Hernani_Centro","Hernani","Martutene","Loiola","Donosti","Gros","Ategorrieta","Intxaurrondo","Herrera","Pasaia","Lezo-Renteria"],
-    2 : ["Billabona Zizurki","Andoain_Centro","Andoain","Ventas_de_Irun","Irun"],
-    3 : ["Alegia","Tolosa","Tolosa_Centro","Anoeta"],
+    1 : ["Urnieta","Hernani Centro","Hernani","Martutene","Loiola","Donosti","Gros","Ategorrieta","Intxaurrondo","Herrera","Pasaia","Lezo-Renteria"],
+    2 : ["Billabona Zizurki","Andoain Centro","Andoain","Ventas de Irun","Irun"],
+    3 : ["Alegia","Tolosa","Tolosa Centro","Anoeta"],
     4 : ["Beasain","Ordizia","Itsasondo","Legorreta","Ikaztegieta"],
     5 : ["Legazpi","Zumarraga","Ormaiztegi"],
     6 : ["Brinkola"],
@@ -34,14 +34,6 @@ def print_stations():
         for s in p:
             stations.append(s)
     return stations
-
-"""def print_zonas():
-    stations = ''
-    for z, p in zonas.items():
-        for s in p:
-            stations += '<a href="#">' + s + '</a><br>'
-    return stations"""
-
 
 def print_precios():
     for p in precios.values():

@@ -1,10 +1,11 @@
-from flask import Flask
+from flask import Flask, session
 from flask import render_template
 import misfunciones as rf
 
 
 app = Flask(__name__)
 app.debug = True
+app.secret_key = 'A8Zr98j/1yX Z~XHH!jmN]LWX/,?LT'
 
 @app.route("/")
 def principal():
@@ -14,6 +15,7 @@ def principal():
 def opc(select):
     stations = rf.print_stations()
     return render_template('stations.html', stations=stations)
+    session["<select>"] = select
 
 @app.route("/precio/<station>")
 def precio(station):
