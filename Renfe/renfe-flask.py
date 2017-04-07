@@ -12,10 +12,14 @@ def principal():
 
 @app.route("/opc/<select>")
 def opc(select):
-    #return render_template('Renfe.html')
-    #return "Has seleccionado la opción: " + select
     stations = rf.print_stations()
     return render_template('stations.html', stations=stations)
+
+@app.route("/precio/<station>")
+def precio(station):
+    precio = 1.6
+    return render_template('precio.html', precio=precio, station=station, mipoblacion=rf.mipoblacion)
+
 
 if __name__ == "__main__":
     app.run()

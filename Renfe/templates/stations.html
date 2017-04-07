@@ -8,6 +8,8 @@
         </style>
     </head>
     {% for s in stations %}
-        <input type="button" value="{{ s }}" class="boton_station"></input><br>
+        <form action="/precio/{{ s }}">
+            <input type="submit" value="{{ s }}" class="boton_station"></input><br>
+        </form>
     {% endfor %}    
 </html>
