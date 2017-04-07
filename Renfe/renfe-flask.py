@@ -14,7 +14,8 @@ def principal():
 def opc(select):
     #return render_template('Renfe.html')
     #return "Has seleccionado la opción: " + select
-    return str(rf.print_zonas())
+    stations = rf.print_stations()
+    return render_template('stations.html', stations=stations)
 
 if __name__ == "__main__":
     app.run()

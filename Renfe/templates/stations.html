@@ -1,10 +1,13 @@
 <html>
     <head>
         <style>
-            .boton_station {font-size: 20px;}
+            .boton_station {
+                font-size: 20px;
+                margin-top: 5px;
+                }
         </style>
     </head>
-    {% for z,p in zonas.items(): %}
-        <input type="button" value="{{ station }}" class="boton_station"></input><br>
+    {% for s in stations %}
+        <input type="button" value="{{ s }}" class="boton_station"></input><br>
     {% endfor %}    
 </html>

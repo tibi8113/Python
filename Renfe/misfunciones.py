@@ -28,7 +28,7 @@ def buscar_zona():
         return zona
 
 
-def print_zonas():
+def print_stations():
     stations = []
     for z, p in zonas.items():
         for s in p:
