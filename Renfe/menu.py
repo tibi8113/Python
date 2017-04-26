@@ -4,10 +4,10 @@ import json
 
 """MAIN"""
 
-opc = input("1.Ida\n2.Ida y vuelta\n3.Mensual\n")
+opc = input("1.Ida\n2.Ida y vuelta\n3.Mensual\n4.Mensual ilimitado")
 
 if opc == "1":
-    opc = "ida"
+    m.opc = "ida"
     print("IDA")
 
 elif opc == "2":
@@ -19,13 +19,14 @@ elif opc == "3":
 elif opc =="4":
     print("MENSUAL ILIMITADO")
     
-print (m.print_zonas())
+print (m.print_stations())
 
 m.destino = input("Destino: ")
 
 print("El precio de (" + opc + ") de " + m.mipoblacion + " a " + m.destino + " es:")
 
-m.get_precio()
+
+print(m.get_precio(m.buscar_zona(m.destino)))
 
 
 
