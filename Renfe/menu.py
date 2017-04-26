@@ -4,7 +4,7 @@ import json
 
 """MAIN"""
 
-opc = input("1.Ida\n2.Ida y vuelta\n3.Mensual\n4.Mensual ilimitado")
+opc = input("1.Ida\n2.Ida y vuelta\n3.Mensual\n4.Mensual ilimitado\n")
 
 if opc == "1":
     m.opc = "ida"
