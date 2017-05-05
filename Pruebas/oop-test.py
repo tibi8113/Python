@@ -60,13 +60,13 @@ my_car.add_fuel(50)
 """-----------------------------------------------------------------------------------------------------------------------------------"""
 
 #Crear almacen.
-almacen = WareHouse('Volkswagen' , 'Munich')
+myWareHouse1 = WareHouse('Volkswagen' , 'Munich')
 
 #Coger el almacen y añadir los coches.
-WareHouse.add_car(my_car)
-WareHouse.add_car(my_car2)
-WareHouse.add_car(my_electric_car)
-
+myWareHouse1.add_car(my_car)
+    print(my_car.name)
+myWareHouse1.add_car(my_car2)
+myWareHouse1.add_car(my_electric_car)
 
 
 
