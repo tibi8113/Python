@@ -41,7 +41,7 @@ class WareHouse():
 
     
     def remove_car(self, car):
-        #Quitar un coche al WareHouse.
+        #Quitar un coche del WareHouse.
         self.cars.append(car)
 
 
@@ -59,7 +59,21 @@ my_car.add_fuel(50)
 
 """-----------------------------------------------------------------------------------------------------------------------------------"""
 
+#Crear almacen.
+almacen = WareHouse('Volkswagen' , 'Munich')
 
+#Coger el almacen y añadir los coches.
+WareHouse.add_car(my_car)
+WareHouse.add_car(my_car2)
+WareHouse.add_car(my_electric_car)
+
+
+
+
+
+"""-----------------------------------------------------------------------------------------------------------------------------------"""
+
+""" Crear lista e imprimirla (Modelo cutre)
 #Lista de coches
 lista_coches = []
 lista_coches.append(my_car)
@@ -68,7 +82,7 @@ lista_coches.append(my_car2)
 #Print de todos los coches.
 for car in lista_coches:
     print(car)
-
+"""
 
 #print("Make: " + my_car.make + "; " + "Model: " + my_car.model + "; " + "Color: " + my_car.color)
 #print("Make: " + my_car2.make + "; " + "Model: " + my_car2.model + "; " + "Color: " + my_car2.color)
